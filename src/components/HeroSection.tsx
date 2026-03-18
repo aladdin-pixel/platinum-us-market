@@ -78,7 +78,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-sm sm:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 mb-2 leading-relaxed">
+          className="text-sm sm:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 md:mt-10 mb-2 md:mb-4 leading-relaxed">
           
           {t("hero.subheadline")}
         </motion.p>
