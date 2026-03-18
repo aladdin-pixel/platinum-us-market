@@ -65,12 +65,30 @@ const HeroSection = () => {
           {t("hero.subheadline")}
         </motion.p>
 
-        {/* Metadata tags */}
+        {/* Video embed */}
+        <motion.div
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border/50"
+        >
+          <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary/10 pointer-events-none z-10" />
+          <div className="aspect-video bg-muted">
+            <iframe
+              src="https://player.vimeo.com/video/1165639970?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
+              allow="autoplay; fullscreen; picture-in-picture"
+              className="w-full h-full"
+              title="Smart Energy Pays"
+            />
+          </div>
+        </motion.div>
+
+        {/* Metadata tags - under video */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-10 text-sm text-muted-foreground"
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-6 mb-10 text-sm text-muted-foreground"
         >
           <span className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -86,30 +104,12 @@ const HeroSection = () => {
           </span>
         </motion.div>
 
-        {/* Video embed */}
-        <motion.div
-          initial={{ opacity: 0, y: 40, scale: 0.95 }}
-          animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border/50"
-        >
-          <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary/10 pointer-events-none z-10" />
-          <div className="aspect-video bg-muted">
-            <iframe
-              src="https://player.vimeo.com/video/1165639970?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
-              allow="autoplay; fullscreen; picture-in-picture"
-              className="w-full h-full"
-              title="Smart Energy Pays"
-            />
-          </div>
-        </motion.div>
-
         {/* Email signup form */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex justify-center mt-10 mb-14"
+          className="flex justify-center mb-14"
         >
           <EmailSignupForm id="hero-signup" />
         </motion.div>
