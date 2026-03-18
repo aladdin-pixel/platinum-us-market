@@ -115,27 +115,27 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Trust strip */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm text-muted-foreground">
-          
-          {[t("trust.item1"), t("trust.item2"), t("trust.item3")].map(
-            (item, i) =>
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, x: -10 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.8 + i * 0.1 }}
-              className="flex items-center gap-2">
-              
-                <Eye className="w-3.5 h-3.5 text-primary" />
-                {item}
-              </motion.span>
+        
 
-          )}
-        </motion.div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
       </div>
     </section>);
 
