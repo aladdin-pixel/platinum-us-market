@@ -52,7 +52,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight mb-6"
         >
-          {t("hero.headline")}
+          {t("hero.headlinePart1")}<span className="text-primary">{t("hero.headlinePart2")}</span>
         </motion.h1>
 
         {/* Subheadline */}
