@@ -17,7 +17,7 @@ const TrustComparisonSection = () => {
 
 
   return (
-    <section ref={ref} className="py-24 px-4 pb-[74px] pt-[41px]">
+    <section ref={ref} className="py-24 px-4 pb-[74px] pt-[25px]">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
