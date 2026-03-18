@@ -21,7 +21,7 @@ const Index = () => {
         <PrizeSection />
         <HowItWorksSection />
         <TrustComparisonSection />
-        <ScarcitySection />
+        
         <FAQSection />
         <FinalCTASection />
       </main>
