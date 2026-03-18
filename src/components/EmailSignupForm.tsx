@@ -83,7 +83,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className={`h-12 rounded-xl text-base flex-1 ${
+        className={`h-14 rounded-xl text-base flex-1 ${
           variant === "dark"
             ? "bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-primary"
             : "bg-background border-border"
