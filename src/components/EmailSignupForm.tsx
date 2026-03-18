@@ -63,7 +63,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col sm:flex-row gap-3 w-full max-w-md"
+      className="flex flex-col sm:flex-row gap-3 w-full max-w-lg"
       id={id}
     >
       <input
