@@ -94,7 +94,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="h-12 px-6 rounded-xl font-semibold text-base gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 whitespace-nowrap"
+        className="h-14 px-6 rounded-xl font-semibold text-base gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 whitespace-nowrap"
       >
         {isSubmitting ? t("form.submitting") : t("form.submit")}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
