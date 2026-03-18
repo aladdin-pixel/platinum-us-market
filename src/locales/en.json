@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "brandName": "Smart Energy Pays",
+    "reserveSpot": "Reserve Your Spot"
+  },
+  "hero": {
+    "badge": "Platinum Access · Limited Window",
+    "headline": "Unlock platinum perks — and a shot at €300K in rewards.",
+    "subheadline": "Smart Energy Pays gives you instant access to premium benefits, plus one chance to win monthly payouts of up to €5,000 for 5 years.",
+    "tagSimple": "Simple entry",
+    "tagTransparent": "Transparent rules",
+    "tagDeadline": "Closes April 30, 2026"
+  },
+  "trust": {
+    "item1": "Limited-time participation",
+    "item2": "Fast signup",
+    "item3": "Transparent process"
+  },
+  "activity": {
+    "headline": "Live Participation",
+    "participants": "Participants Joined",
+    "momentum": "Entry Momentum",
+    "momentumLabel": "Rising",
+    "spotsLabel": "Days Remaining"
+  },
+  "benefits": {
+    "headline": "It all starts with real value",
+    "subheadline": "Your Smart Energy Pays Platinum account delivers tangible advantages from day one — win or not.",
+    "card1Title": "Full Ecosystem Access",
+    "card1Desc": "Unlock the complete Smart Energy Pay platform and all its integrated services from day one.",
+    "card2Title": "Future of Energy & Finance",
+    "card2Desc": "Position yourself at the intersection of sustainable energy and modern financial infrastructure.",
+    "card3Title": "Exclusive Vehicle Discounts",
+    "card3Desc": "Access up to 25% off new BMW and Mercedes vehicles through our exclusive partnership program.",
+    "card4Title": "Built for Long-Term Value",
+    "card4Desc": "This isn't a quick flip. It's a premium ecosystem designed for compounding advantages over time."
+  },
+  "prizes": {
+    "headline": "One game. Real prizes. No catch.",
+    "subheadline": "A single participation-based draw with life-changing rewards.",
+    "badge1": "No subscription needed",
+    "badge2": "No extra purchases",
+    "badge3": "Transparent draw process",
+    "badge4": "Clear, published rules",
+    "tier1Monthly": "€1,000/mo",
+    "tier1Duration": "for 1 year",
+    "tier1Total": "€12,000",
+    "tier2Monthly": "€2,000/mo",
+    "tier2Duration": "for 2 years",
+    "tier2Total": "€48,000",
+    "tier3Monthly": "€3,000/mo",
+    "tier3Duration": "for 3 years",
+    "tier3Total": "€108,000",
+    "tier4Monthly": "€4,000/mo",
+    "tier4Duration": "for 4 years",
+    "tier4Total": "€192,000",
+    "tier5Monthly": "€5,000/mo",
+    "tier5Duration": "for 5 years",
+    "tier5Total": "€300,000",
+    "grandPrize": "Grand Prize",
+    "totalLabel": "Total"
+  },
+  "howItWorks": {
+    "headline": "How it works",
+    "step1Title": "Open Your Account",
+    "step1Desc": "Create your Smart Energy Pays account in minutes",
+    "step2Title": "Swap & Enter",
+    "step2Desc": "Each €1,000 swapped into SEP earns you one entry ticket",
+    "step3Title": "Live Draw",
+    "step3Desc": "Winners are drawn transparently via live stream",
+    "step4Title": "Keep Your Benefits",
+    "step4Desc": "Win or not, your platinum benefits stay yours forever",
+    "disclaimer": "Each €1,000 = one additional entry · Max one prize per person"
+  },
+  "comparison": {
+    "headline": "What This Is vs. What This Isn't",
+    "is": "What This Is",
+    "isNot": "What This Isn't",
+    "is1": "Participation-based game",
+    "isNot1": "Gambling",
+    "is2": "One-time decision",
+    "isNot2": "Repeated betting",
+    "is3": "Real underlying value",
+    "isNot3": "Empty lottery ticket",
+    "is4": "Transparent mechanics",
+    "isNot4": "Hidden rules",
+    "is5": "Platinum benefits first",
+    "isNot5": "Prize-only play"
+  },
+  "scarcity": {
+    "headline": "The window is closing",
+    "subheadline": "This is a one-time participation opportunity. Once the deadline passes, no new entries will be accepted.",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "limitedWindow": "Limited participation window",
+    "noGuarantee": "Next access round is not guaranteed"
+  },
+  "faq": {
+    "headline": "What people usually ask before joining",
+    "q1": "Do I need to be a new client?",
+    "a1": "No. Existing and new clients are both welcome to participate.",
+    "q2": "How many tickets can I get?",
+    "a2": "As many as you want. Every €1,000 swapped into $SEP earns you one entry ticket.",
+    "q3": "Do I need a specific subscription?",
+    "a3": "No. All subscription tiers include full platinum benefits access.",
+    "q4": "What exactly can I win?",
+    "a4": "Up to €5,000/month for 5 years (€300,000 total), plus exclusive ecosystem perks like vehicle discounts and full platform access."
+  },
+  "finalCta": {
+    "headline": "The window closes April 30, 2026",
+    "subheadline": "After this date, no new entries will be accepted. This is a one-time opportunity.",
+    "trustReminder": "Join thousands already securing their platinum access"
+  },
+  "footer": {
+    "copyright": "© 2026 Smart Energy Pays. All rights reserved.",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "form": {
+    "emailPlaceholder": "Enter your email address",
+    "submit": "Reserve Your Spot",
+    "submitting": "Reserving...",
+    "success": "Your spot has been reserved!",
+    "successDesc": "We'll be in touch with next steps.",
+    "error": "Please enter a valid email address.",
+    "reserved": "Your spot is reserved!"
+  }
+}

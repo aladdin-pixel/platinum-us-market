@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "brandName": "Smart Energy Pays",
+    "reserveSpot": "Platz reservieren"
+  },
+  "hero": {
+    "badge": "Platinum-Zugang · Begrenztes Zeitfenster",
+    "headline": "Platinum-Vorteile sichern — und die Chance auf €300.000 an Prämien.",
+    "subheadline": "Smart Energy Pays gibt Ihnen sofortigen Zugang zu Premium-Vorteilen, plus eine Chance auf monatliche Auszahlungen von bis zu €5.000 für 5 Jahre.",
+    "tagSimple": "Einfache Teilnahme",
+    "tagTransparent": "Transparente Regeln",
+    "tagDeadline": "Endet am 30. April 2026"
+  },
+  "trust": {
+    "item1": "Zeitlich begrenzte Teilnahme",
+    "item2": "Schnelle Anmeldung",
+    "item3": "Transparenter Prozess"
+  },
+  "activity": {
+    "headline": "Live-Teilnahme",
+    "participants": "Teilnehmer beigetreten",
+    "momentum": "Teilnahme-Dynamik",
+    "momentumLabel": "Steigend",
+    "spotsLabel": "Tage verbleibend"
+  },
+  "benefits": {
+    "headline": "Alles beginnt mit echtem Mehrwert",
+    "subheadline": "Ihr Smart Energy Pays Platinum-Konto liefert greifbare Vorteile ab dem ersten Tag — ob Gewinn oder nicht.",
+    "card1Title": "Voller Ökosystem-Zugang",
+    "card1Desc": "Schalten Sie die komplette Smart Energy Pay Plattform und alle integrierten Services ab dem ersten Tag frei.",
+    "card2Title": "Zukunft von Energie & Finanzen",
+    "card2Desc": "Positionieren Sie sich an der Schnittstelle von nachhaltiger Energie und moderner Finanzinfrastruktur.",
+    "card3Title": "Exklusive Fahrzeugrabatte",
+    "card3Desc": "Bis zu 25% Rabatt auf neue BMW- und Mercedes-Fahrzeuge durch unser exklusives Partnerprogramm.",
+    "card4Title": "Für langfristigen Wert gebaut",
+    "card4Desc": "Das ist kein schneller Gewinn. Es ist ein Premium-Ökosystem für wachsende Vorteile über die Zeit."
+  },
+  "prizes": {
+    "headline": "Ein Spiel. Echte Preise. Kein Haken.",
+    "subheadline": "Eine einmalige teilnahmebasierte Ziehung mit lebensverändernden Gewinnen.",
+    "badge1": "Kein Abo nötig",
+    "badge2": "Keine Zusatzkäufe",
+    "badge3": "Transparenter Ziehungsprozess",
+    "badge4": "Klare, veröffentlichte Regeln",
+    "tier1Monthly": "€1.000/Mo",
+    "tier1Duration": "für 1 Jahr",
+    "tier1Total": "€12.000",
+    "tier2Monthly": "€2.000/Mo",
+    "tier2Duration": "für 2 Jahre",
+    "tier2Total": "€48.000",
+    "tier3Monthly": "€3.000/Mo",
+    "tier3Duration": "für 3 Jahre",
+    "tier3Total": "€108.000",
+    "tier4Monthly": "€4.000/Mo",
+    "tier4Duration": "für 4 Jahre",
+    "tier4Total": "€192.000",
+    "tier5Monthly": "€5.000/Mo",
+    "tier5Duration": "für 5 Jahre",
+    "tier5Total": "€300.000",
+    "grandPrize": "Hauptpreis",
+    "totalLabel": "Gesamt"
+  },
+  "howItWorks": {
+    "headline": "So funktioniert's",
+    "step1Title": "Konto eröffnen",
+    "step1Desc": "Erstellen Sie Ihr Smart Energy Pays Konto in wenigen Minuten",
+    "step2Title": "Tauschen & Teilnehmen",
+    "step2Desc": "Jeder Tausch von €1.000 in SEP bringt Ihnen ein Los",
+    "step3Title": "Live-Ziehung",
+    "step3Desc": "Gewinner werden transparent per Livestream gezogen",
+    "step4Title": "Vorteile behalten",
+    "step4Desc": "Ob Gewinn oder nicht — Ihre Platinum-Vorteile bleiben bestehen",
+    "disclaimer": "Jede €1.000 = ein zusätzliches Los · Maximal ein Preis pro Person"
+  },
+  "comparison": {
+    "headline": "Was das ist vs. was das nicht ist",
+    "is": "Was das ist",
+    "isNot": "Was das nicht ist",
+    "is1": "Teilnahmebasiertes Gewinnspiel",
+    "isNot1": "Glücksspiel",
+    "is2": "Einmalige Entscheidung",
+    "isNot2": "Wiederholtes Wetten",
+    "is3": "Realer Mehrwert",
+    "isNot3": "Leeres Lotterielos",
+    "is4": "Transparente Mechanik",
+    "isNot4": "Versteckte Regeln",
+    "is5": "Platinum-Vorteile zuerst",
+    "isNot5": "Nur-Gewinn-Spiel"
+  },
+  "scarcity": {
+    "headline": "Das Zeitfenster schließt sich",
+    "subheadline": "Dies ist eine einmalige Teilnahmemöglichkeit. Nach Ablauf der Frist werden keine neuen Einträge mehr akzeptiert.",
+    "days": "Tage",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden",
+    "limitedWindow": "Begrenztes Teilnahmefenster",
+    "noGuarantee": "Eine nächste Zugangsmöglichkeit ist nicht garantiert"
+  },
+  "faq": {
+    "headline": "Was Interessenten meist fragen",
+    "q1": "Muss ich Neukunde sein?",
+    "a1": "Nein. Bestehende und neue Kunden sind gleichermaßen willkommen.",
+    "q2": "Wie viele Tickets kann ich bekommen?",
+    "a2": "So viele wie Sie möchten. Jede €1.000, die in $SEP getauscht wird, ergibt ein Los.",
+    "q3": "Brauche ich ein bestimmtes Abonnement?",
+    "a3": "Nein. Alle Abonnementstufen beinhalten vollen Zugang zu den Platinum-Vorteilen.",
+    "q4": "Was genau kann ich gewinnen?",
+    "a4": "Bis zu €5.000/Monat für 5 Jahre (€300.000 insgesamt), plus exklusive Ökosystem-Vorteile wie Fahrzeugrabatte und voller Plattformzugang."
+  },
+  "finalCta": {
+    "headline": "Das Zeitfenster schließt am 30. April 2026",
+    "subheadline": "Nach diesem Datum keine neuen Einträge mehr. Dies ist eine einmalige Gelegenheit.",
+    "trustReminder": "Schließen Sie sich Tausenden an, die sich bereits ihren Platinum-Zugang sichern"
+  },
+  "footer": {
+    "copyright": "© 2026 Smart Energy Pays. Alle Rechte vorbehalten.",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
+  },
+  "form": {
+    "emailPlaceholder": "E-Mail-Adresse eingeben",
+    "submit": "Platz reservieren",
+    "submitting": "Wird reserviert...",
+    "success": "Ihr Platz wurde reserviert!",
+    "successDesc": "Wir melden uns mit den nächsten Schritten.",
+    "error": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "reserved": "Ihr Platz ist reserviert!"
+  }
+}
