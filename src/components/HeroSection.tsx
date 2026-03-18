@@ -8,7 +8,7 @@ const HeroSection = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [showVideo, setShowVideo] = useState(false);
+  
 
   return (
     <section
