@@ -80,10 +80,9 @@ const ActivitySection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative group p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm hover:bg-white/15 transition-all duration-300"
             >
-              <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative">
                 <stat.icon className="w-5 h-5 text-primary mb-3" />
-                <div className="text-3xl font-display font-bold text-foreground mb-1">
+                <div className="text-3xl font-display font-bold text-white mb-1">
                   {stat.isCounter ? (
                     <AnimatedCounter target={stat.value as number} />
                   ) : (
