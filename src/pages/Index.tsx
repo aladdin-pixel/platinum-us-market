@@ -5,7 +5,7 @@ import BenefitsSection from "@/components/BenefitsSection";
 import PrizeSection from "@/components/PrizeSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import TrustComparisonSection from "@/components/TrustComparisonSection";
-import ScarcitySection from "@/components/ScarcitySection";
+
 import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
