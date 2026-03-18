@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 import { Shield, Clock } from "lucide-react";
@@ -8,7 +8,7 @@ const HeroSection = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [showVideo, setShowVideo] = useState(false);
+  
 
   return (
     <section
@@ -65,25 +65,11 @@ const HeroSection = () => {
           
           <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary/10 pointer-events-none z-10" />
           <div className="aspect-video bg-muted">
-            {showVideo ? (
-              <iframe
-                src="https://player.vimeo.com/video/1165639970?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
-                allow="autoplay; fullscreen; picture-in-picture"
-                className="w-full h-full"
-                title="Smart Energy Pays"
-                loading="lazy" />
-            ) : (
-              <button
-                onClick={() => setShowVideo(true)}
-                className="w-full h-full flex items-center justify-center bg-muted hover:bg-muted/80 transition-colors cursor-pointer group"
-                aria-label="Play video">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 sm:w-8 sm:h-8 text-primary-foreground ml-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </button>
-            )}
+            <iframe
+              src="https://player.vimeo.com/video/1165639970?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
+              allow="autoplay; fullscreen; picture-in-picture"
+              className="w-full h-full"
+              title="Smart Energy Pays" />
           </div>
         </motion.div>
 
