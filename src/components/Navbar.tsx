@@ -47,12 +47,6 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex items-center gap-3 sm:gap-4">
-          <button
-            onClick={toggleLanguage}
-            className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-lg hover:bg-secondary"
-          >
-            {i18n.language === "en" ? "DE" : "EN"}
-          </button>
           <Button
             onClick={scrollToHero}
             size="sm"
