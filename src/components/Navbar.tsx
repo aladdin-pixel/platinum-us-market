@@ -14,10 +14,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "de" : "en");
-  };
-
   const scrollToHero = () => {
     document
       .getElementById("hero-signup")
