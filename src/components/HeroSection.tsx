@@ -55,16 +55,6 @@ const HeroSection = () => {
           {t("hero.headlinePart1")}<span className="text-primary">{t("hero.headlinePart2")}</span>
         </motion.h1>
 
-        {/* Subheadline */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
-        >
-          {t("hero.subheadline")}
-        </motion.p>
-
         {/* Video embed */}
         <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
@@ -82,6 +72,16 @@ const HeroSection = () => {
             />
           </div>
         </motion.div>
+
+        {/* Subheadline - under video */}
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-sm sm:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 mb-2 leading-relaxed"
+        >
+          {t("hero.subheadline")}
+        </motion.p>
 
         {/* Metadata tags - under video */}
         <motion.div
