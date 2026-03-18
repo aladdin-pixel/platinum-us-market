@@ -5,11 +5,11 @@ import { Users, TrendingUp, CalendarClock } from "lucide-react";
 
 const AnimatedCounter = ({
   target,
-  duration = 1.8,
-}: {
-  target: number;
-  duration?: number;
-}) => {
+  duration = 1.8
+
+
+
+}: {target: number;duration?: number;}) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
@@ -54,53 +54,53 @@ const ActivitySection = () => {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   const stats = [
-    {
-      icon: Users,
-      value: 2847,
-      label: t("activity.participants"),
-      isCounter: true,
-    },
-    {
-      icon: TrendingUp,
-      value: t("activity.momentumLabel"),
-      label: t("activity.momentum"),
-      isCounter: false,
-    },
-    {
-      icon: CalendarClock,
-      value: getDaysRemaining(),
-      label: t("activity.spotsLabel"),
-      isCounter: true,
-    },
-  ];
+  {
+    icon: Users,
+    value: 2847,
+    label: t("activity.participants"),
+    isCounter: true
+  },
+  {
+    icon: TrendingUp,
+    value: t("activity.momentumLabel"),
+    label: t("activity.momentum"),
+    isCounter: false
+  },
+  {
+    icon: CalendarClock,
+    value: getDaysRemaining(),
+    label: t("activity.spotsLabel"),
+    isCounter: true
+  }];
+
 
   return (
-    <section ref={ref} className="relative py-12 sm:py-16 px-4 bg-foreground overflow-hidden">
+    <section ref={ref} className="relative sm:py-16 px-4 bg-foreground overflow-hidden py-[42px] my-0">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-3 gap-3 sm:gap-6">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 16 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-primary-foreground/10 border border-primary-foreground/10 backdrop-blur-sm"
-            >
+          {stats.map((stat, i) =>
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 16 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.4, delay: i * 0.08 }}
+            className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-primary-foreground/10 border border-primary-foreground/10 backdrop-blur-sm">
+            
               <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary mb-2 sm:mb-3" />
               <div className="text-xl sm:text-3xl font-display font-bold text-primary-foreground mb-0.5 sm:mb-1">
-                {stat.isCounter ? (
-                  <AnimatedCounter target={stat.value as number} />
-                ) : (
-                  <span className="text-primary">{stat.value}</span>
-                )}
+                {stat.isCounter ?
+              <AnimatedCounter target={stat.value as number} /> :
+
+              <span className="text-primary">{stat.value}</span>
+              }
               </div>
               <p className="text-xs sm:text-sm text-primary-foreground/60">{stat.label}</p>
             </motion.div>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ActivitySection;
