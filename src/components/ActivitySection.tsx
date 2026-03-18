@@ -53,7 +53,9 @@ const ActivitySection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
-  const stats = [
+  const daysRemaining = useMemo(() => getDaysRemaining(), []);
+
+  const stats = useMemo(() => [
   {
     icon: Users,
     value: 2847,
@@ -68,10 +70,10 @@ const ActivitySection = () => {
   },
   {
     icon: CalendarClock,
-    value: getDaysRemaining(),
+    value: daysRemaining,
     label: t("activity.spotsLabel"),
     isCounter: true
-  }];
+  }], [t, daysRemaining]);
 
 
   return (
