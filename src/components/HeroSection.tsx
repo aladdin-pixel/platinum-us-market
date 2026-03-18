@@ -1,7 +1,7 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
-import { Shield, Clock, Eye } from "lucide-react";
+import { Shield, Clock } from "lucide-react";
 import EmailSignupForm from "./EmailSignupForm";
 
 const HeroSection = () => {
