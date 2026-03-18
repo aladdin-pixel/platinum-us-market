@@ -40,7 +40,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-5 border border-primary/20 text-sm -mt-4">
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-5 md:mb-8 border border-primary/20 text-sm -mt-4">
           
           <Shield className="w-4 h-4" />
           {t("hero.badge")}
@@ -51,7 +51,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight mb-6">
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight mb-6 md:mb-10">
           
           {t("hero.headlinePart1")}<span className="text-primary">{t("hero.headlinePart2")}</span>
         </motion.h1>
@@ -78,7 +78,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-sm sm:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 mb-2 leading-relaxed">
+          className="text-sm sm:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 md:mt-10 mb-2 md:mb-4 leading-relaxed">
           
           {t("hero.subheadline")}
         </motion.p>
@@ -88,7 +88,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex justify-center mb-6">
+          className="flex justify-center mb-6 md:mb-8">
           
           <EmailSignupForm id="hero-signup" />
         </motion.div>
