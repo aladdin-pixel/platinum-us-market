@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex flex-col items-center justify-center pt-[80px] px-4 overflow-hidden pb-[5px]">
+      className="relative min-h-screen flex flex-col items-center justify-center pt-[80px] md:pt-[100px] px-4 overflow-hidden pb-[5px]">
       
       {/* Background gradient blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
