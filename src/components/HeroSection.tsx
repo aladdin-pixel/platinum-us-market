@@ -104,6 +104,16 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
+        {/* Email signup form */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="flex justify-center mt-10 mb-14"
+        >
+          <EmailSignupForm id="hero-signup" />
+        </motion.div>
+
         {/* Trust strip */}
         <motion.div
           initial={{ opacity: 0 }}

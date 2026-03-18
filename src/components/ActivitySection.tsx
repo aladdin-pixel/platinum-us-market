@@ -89,7 +89,7 @@ const ActivitySection = () => {
                     <span className="text-primary">{stat.value}</span>
                   )}
                 </div>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+                <p className="text-sm text-white/60">{stat.label}</p>
               </div>
             </motion.div>
           ))}
