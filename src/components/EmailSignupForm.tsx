@@ -83,7 +83,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className={`h-12 rounded-xl text-base flex-1 ${
+        className={`h-14 rounded-xl text-base flex-1 ${
           variant === "dark"
             ? "bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-primary"
             : "bg-background border-border"
@@ -94,7 +94,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="h-12 px-6 rounded-xl font-semibold text-base gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 whitespace-nowrap"
+        className="h-14 px-6 rounded-xl font-semibold text-base gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 whitespace-nowrap"
       >
         {isSubmitting ? t("form.submitting") : t("form.submit")}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
