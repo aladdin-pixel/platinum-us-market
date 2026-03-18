@@ -12,7 +12,7 @@ const FinalCTASection = () => {
   return (
     <section
       ref={ref}
-      className="relative px-4 bg-foreground overflow-hidden py-[74px]">
+      className="relative px-4 bg-foreground overflow-hidden py-[87px]">
       
       {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

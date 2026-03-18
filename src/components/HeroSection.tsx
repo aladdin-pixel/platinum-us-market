@@ -98,7 +98,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-14 text-sm text-muted-foreground my-0">
+          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-muted-foreground my-0 pt-0 mb-[47px] mt-[16px]">
           
           <span className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />

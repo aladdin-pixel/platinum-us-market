@@ -16,7 +16,7 @@ const HowItWorksSection = () => {
 
 
   return (
-    <section ref={ref} className="py-24 px-4 bg-secondary/50 pt-[74px] pb-[74px]">
+    <section ref={ref} className="py-24 px-4 bg-secondary/50 pb-[74px] pt-[51px]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
