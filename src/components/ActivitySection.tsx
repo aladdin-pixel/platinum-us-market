@@ -75,7 +75,7 @@ const ActivitySection = () => {
 
 
   return (
-    <section ref={ref} className="relative sm:py-16 px-4 bg-foreground overflow-hidden py-[42px] my-0">
+    <section ref={ref} className="relative sm:py-16 px-4 bg-foreground overflow-hidden py-[42px] my-0 pt-[47px]">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-3 gap-3 sm:gap-6">
           {stats.map((stat, i) =>

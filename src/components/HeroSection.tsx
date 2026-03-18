@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
+      className="relative min-h-screen flex flex-col items-center justify-center pt-24 px-4 overflow-hidden pb-[5px]">
       
       {/* Background gradient blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -33,7 +33,7 @@ const HeroSection = () => {
         
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center pb-0 pt-[2px] py-0">
+      <div className="relative z-10 max-w-4xl mx-auto text-center pt-[2px] py-0 pb-0">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

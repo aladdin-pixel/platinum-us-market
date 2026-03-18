@@ -9,21 +9,21 @@ const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const steps = [
-    { icon: UserPlus, title: t("howItWorks.step1Title"), desc: t("howItWorks.step1Desc") },
-    { icon: ArrowRightLeft, title: t("howItWorks.step2Title"), desc: t("howItWorks.step2Desc") },
-    { icon: Radio, title: t("howItWorks.step3Title"), desc: t("howItWorks.step3Desc") },
-    { icon: Award, title: t("howItWorks.step4Title"), desc: t("howItWorks.step4Desc") },
-  ];
+  { icon: UserPlus, title: t("howItWorks.step1Title"), desc: t("howItWorks.step1Desc") },
+  { icon: ArrowRightLeft, title: t("howItWorks.step2Title"), desc: t("howItWorks.step2Desc") },
+  { icon: Radio, title: t("howItWorks.step3Title"), desc: t("howItWorks.step3Desc") },
+  { icon: Award, title: t("howItWorks.step4Title"), desc: t("howItWorks.step4Desc") }];
+
 
   return (
-    <section ref={ref} className="py-24 px-4 bg-secondary/50">
+    <section ref={ref} className="py-24 px-4 bg-secondary/50 pt-[74px] pb-[74px]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
+          
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t("howItWorks.headline")}
           </h2>
@@ -35,14 +35,14 @@ const HowItWorksSection = () => {
           <div className="hidden md:block absolute top-16 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-border via-primary/30 to-border" />
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
-            {steps.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
-                className="relative flex flex-col items-center text-center"
-              >
+            {steps.map((step, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
+              className="relative flex flex-col items-center text-center">
+              
                 <div className="relative z-10 flex items-center justify-center w-14 h-14 rounded-2xl bg-card border-2 border-primary/20 shadow-sm mb-5 transition-colors">
                   <step.icon className="w-6 h-6 text-primary" />
                   <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
@@ -56,7 +56,7 @@ const HowItWorksSection = () => {
                   {step.desc}
                 </p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
 
@@ -65,13 +65,13 @@ const HowItWorksSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-center text-sm text-muted-foreground mt-12 italic"
-        >
+          className="text-center text-sm text-muted-foreground mt-12 italic">
+          
           {t("howItWorks.disclaimer")}
         </motion.p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HowItWorksSection;

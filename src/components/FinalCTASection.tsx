@@ -12,8 +12,8 @@ const FinalCTASection = () => {
   return (
     <section
       ref={ref}
-      className="relative py-24 px-4 bg-foreground overflow-hidden"
-    >
+      className="relative px-4 bg-foreground overflow-hidden py-[74px]">
+      
       {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/8 rounded-full blur-3xl" />
@@ -24,8 +24,8 @@ const FinalCTASection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
+          transition={{ duration: 0.6 }}>
+          
           <div className="inline-flex items-center gap-2 text-primary text-sm font-semibold mb-6">
             <Clock className="w-4 h-4" />
             April 30, 2026
@@ -43,8 +43,8 @@ const FinalCTASection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center mb-8"
-        >
+          className="flex justify-center mb-8">
+          
           <EmailSignupForm variant="dark" />
         </motion.div>
 
@@ -52,14 +52,14 @@ const FinalCTASection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex items-center justify-center gap-2 text-sm text-white/40"
-        >
+          className="flex items-center justify-center gap-2 text-sm text-white/40">
+          
           <Users className="w-4 h-4" />
           {t("finalCta.trustReminder")}
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default FinalCTASection;
