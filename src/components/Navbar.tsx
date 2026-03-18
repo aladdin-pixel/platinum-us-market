@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -13,10 +13,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "de" : "en");
-  };
 
   const scrollToHero = () => {
     document
@@ -47,12 +43,6 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex items-center gap-3 sm:gap-4">
-          <button
-            onClick={toggleLanguage}
-            className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-lg hover:bg-secondary"
-          >
-            {i18n.language === "en" ? "DE" : "EN"}
-          </button>
           <Button
             onClick={scrollToHero}
             size="sm"
