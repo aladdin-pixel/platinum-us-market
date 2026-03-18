@@ -83,12 +83,22 @@ const HeroSection = () => {
           {t("hero.subheadline")}
         </motion.p>
 
-        {/* Metadata tags - under video */}
+        {/* Email signup form */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="flex justify-center mb-6">
+          
+          <EmailSignupForm id="hero-signup" />
+        </motion.div>
+
+        {/* Metadata tags - under CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-6 mb-10 text-sm text-muted-foreground">
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-14 text-sm text-muted-foreground">
           
           <span className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -102,16 +112,6 @@ const HeroSection = () => {
             <Clock className="w-3.5 h-3.5 text-primary" />
             {t("hero.tagDeadline")}
           </span>
-        </motion.div>
-
-        {/* Email signup form */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex justify-center mb-14">
-          
-          <EmailSignupForm id="hero-signup" />
         </motion.div>
 
         {/* Trust strip */}
