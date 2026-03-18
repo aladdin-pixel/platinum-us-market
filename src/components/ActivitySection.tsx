@@ -1,33 +1,39 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 import { Users, TrendingUp, CalendarClock } from "lucide-react";
 
 const AnimatedCounter = ({
   target,
-  duration = 2,
+  duration = 1.8,
 }: {
   target: number;
   duration?: number;
 }) => {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (!isInView) return;
-    let current = 0;
-    const step = target / (duration * 60);
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
+    const startTime = performance.now();
+    let rafId: number;
+
+    const animate = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / (duration * 1000), 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) {
+        rafId = requestAnimationFrame(animate);
       } else {
-        setCount(Math.floor(current));
+        setCount(target);
       }
-    }, 1000 / 60);
-    return () => clearInterval(timer);
+    };
+
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, [isInView, target, duration]);
 
   return <span ref={ref}>{count.toLocaleString()}</span>;
@@ -45,7 +51,7 @@ const getDaysRemaining = () => {
 const ActivitySection = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   const stats = [
     {
@@ -69,28 +75,26 @@ const ActivitySection = () => {
   ];
 
   return (
-    <section ref={ref} className="relative py-16 px-4 bg-foreground overflow-hidden">
+    <section ref={ref} className="relative py-12 sm:py-16 px-4 bg-foreground overflow-hidden">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 gap-3 sm:gap-6">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative group p-6 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-sm hover:bg-white/15 transition-all duration-300"
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-primary-foreground/10 border border-primary-foreground/10 backdrop-blur-sm"
             >
-              <div className="relative">
-                <stat.icon className="w-5 h-5 text-primary mb-3" />
-                <div className="text-3xl font-display font-bold text-white mb-1">
-                  {stat.isCounter ? (
-                    <AnimatedCounter target={stat.value as number} />
-                  ) : (
-                    <span className="text-primary">{stat.value}</span>
-                  )}
-                </div>
-                <p className="text-sm text-white/60">{stat.label}</p>
+              <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary mb-2 sm:mb-3" />
+              <div className="text-xl sm:text-3xl font-display font-bold text-primary-foreground mb-0.5 sm:mb-1">
+                {stat.isCounter ? (
+                  <AnimatedCounter target={stat.value as number} />
+                ) : (
+                  <span className="text-primary">{stat.value}</span>
+                )}
               </div>
+              <p className="text-xs sm:text-sm text-primary-foreground/60">{stat.label}</p>
             </motion.div>
           ))}
         </div>
