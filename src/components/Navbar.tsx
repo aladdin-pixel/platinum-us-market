@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 

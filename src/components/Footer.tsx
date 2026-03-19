@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="https://smartenergypays.io/legal/imprint" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+          <a href="https://smartenergypay.com/de/impressum" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
             Imprint
           </a>
           <a href="https://smartenergypays.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
