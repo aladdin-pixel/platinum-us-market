@@ -49,7 +49,7 @@ const Navbar = () => {
           </Button>
         </div>
       </div>
-    </motion.nav>);
+    </nav>);
 
 };
 
