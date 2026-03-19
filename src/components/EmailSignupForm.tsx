@@ -34,7 +34,7 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
     setIsSubmitting(false);
     setIsSuccess(true);
     toast.success(t("form.success"), {
-      description: t("form.successDesc"),
+      description: t("form.successDesc")
     });
   };
 
@@ -44,20 +44,28 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         className="flex items-center gap-3 justify-center py-4"
-        id={id}
-      >
+        id={id}>
+        
         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
           <Check className="w-5 h-5 text-primary" />
         </div>
-        <p className={`font-semibold ${variant === "dark" ? "text-primary-foreground" : "text-foreground"}`}>
+        <p
+          className={`font-semibold ${
+          variant === "dark" ? "text-white" : "text-foreground"}`
+          }>
+          
           {t("form.reserved")}
         </p>
-      </motion.div>
-    );
+      </motion.div>);
+
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-lg pt-[8px]" id={id}>
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col sm:flex-row gap-3 w-full max-w-lg pt-[8px]"
+      id={id}>
+      
       <input
         type="text"
         name="website"
@@ -66,8 +74,8 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
         className="absolute opacity-0 pointer-events-none"
         tabIndex={-1}
         autoComplete="off"
-        aria-hidden="true"
-      />
+        aria-hidden="true" />
+      
 
       <Input
         type="email"
@@ -76,23 +84,23 @@ const EmailSignupForm = ({ variant = "light", id }: EmailSignupFormProps) => {
         onChange={(e) => setEmail(e.target.value)}
         required
         className={`h-14 rounded-xl text-base flex-1 ${
-          variant === "dark"
-            ? "bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus-visible:ring-primary"
-            : "bg-background border-border"
-        }`}
-        aria-label="Email address"
-      />
+        variant === "dark" ?
+        "bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-primary" :
+        "bg-background border-border"}`
+        }
+        aria-label="Email address" />
+      
 
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="h-14 px-6 rounded-xl font-semibold text-base gap-2 animate-pulse-glow hover:scale-[1.02] transition-all duration-300 whitespace-nowrap"
-      >
+        className="h-14 px-6 rounded-xl font-semibold text-base gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 whitespace-nowrap">
+        
         {isSubmitting ? t("form.submitting") : t("form.submit")}
         {!isSubmitting && <ArrowRight className="w-4 h-4" />}
       </Button>
-    </form>
-  );
+    </form>);
+
 };
 
 export default EmailSignupForm;
